@@ -11,7 +11,6 @@ const App = () => {
 	useEffect(() => {
 		getRecentMovies()
 		 	.then(data => {
-				console.log(process.env.REACT_APP_API_DOMAIN)
 				setMovies(data.results)
 			})
 			.catch(error => setError('Unable to show most recent movies'))
@@ -19,7 +18,18 @@ const App = () => {
 
 	return (
 		<main>
-			<img src={logo} alt="Timescale" />
+			{error && <h2>{error}</h2>}
+			<div className='header-style'>
+				<img src={logo} alt="Timescale" />
+				<div>
+					<i className="fas fa-search"></i>
+					<input
+					type='text'
+					placeholder='Search for a movie'
+					/>
+				</div>
+			</div>
+			<hr />
 			<Movies movies={movies} />
 		</main>
 	)
