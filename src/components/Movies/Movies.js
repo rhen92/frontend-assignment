@@ -14,9 +14,12 @@ const Movies = ({ movies }) => {
     )
   })
   return (
-    <div>
-      {allMovies}
-    </div>
+    <React.Fragment>
+      <h1 className='recent-movies-title'>Most Recent Movies</h1>
+      <div className='movies-grid'>
+        {allMovies}
+      </div>
+    </React.Fragment>
   )
 }
 
