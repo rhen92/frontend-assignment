@@ -29,3 +29,9 @@ input {
   position: absolute;
   margin: 10px 0 10px 28px
 }
+
+.modal-body {
+  background: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  overflow-y: hidden;
+}
