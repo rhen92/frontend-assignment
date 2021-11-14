@@ -1,0 +1,44 @@
+.modal-style {
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  left: 390px;
+  width: 583px;
+  height: 490px;
+  background: #FFFFFF;
+  pointer-events: auto;
+}
+
+.modal-header-style {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 0;
+}
+
+.x-button {
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 266px;
+  height: 389px;
+}
+
+.modal-paragraph-style {
+  display: flex;
+  justify-content: space-between;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: #000000;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+  margin: 0 25px 0 1px;
+}
+
+.bold-p {
+  margin-left: 0
+}
