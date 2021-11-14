@@ -30,10 +30,10 @@ one of the posters. To fetch the movie info, I used [The Movie DB][movieDB].
 ### Features
 
 The main features that I implemented
-- On the initial visit to the site, it will show the most recent movies
-- Allow users to put in a search term and display matches from the movie database in the same grid
-  - Matches should come from an API call, not filtering prior downloaded results  
-- When a user clicks on one of the cards, open a modal and display more information about the movie
+- On the initial visit to the site, it shows the most recent movies
+- Allows users to put in a search term and displays matches from the movie database in the same grid
+  - Matches come from an API call, not filtering prior downloaded results  
+- When a user clicks on one of the cards, opens a modal and displays more information about the movie
 
 
 [movieDB]: https://developers.themoviedb.org/3/getting-started/introduction
