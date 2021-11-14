@@ -30,7 +30,7 @@ const App = () => {
 			var spotlightMovie = searchedMovies.find(searchedMovie => searchedMovie.title === title);
 			setModalSpotlight(spotlightMovie);
 		} else {
-			var spotlightMovie = movies.find(movie => movie.title === title);
+			spotlightMovie = movies.find(movie => movie.title === title);
 			setModalSpotlight(spotlightMovie);
 		}
 		if (spotlightMovie) {
