@@ -26,8 +26,13 @@ const App = () => {
 	}
 
 	const findModalSpotlight = (title) => {
-		const spotlightMovie = movies.find(movie => movie.title === title);
-		setModalSpotlight(spotlightMovie);
+		if (searchedMovies.length) {
+			var spotlightMovie = searchedMovies.find(searchedMovie => searchedMovie.title === title);
+			setModalSpotlight(spotlightMovie);
+		} else {
+			var spotlightMovie = movies.find(movie => movie.title === title);
+			setModalSpotlight(spotlightMovie);
+		}
 		if (spotlightMovie) {
 			document.body.className = 'modal-body';
 		} else {
@@ -76,6 +81,7 @@ const App = () => {
 				</div>
 			</div>
 			<hr />
+			{!searchedMovies.length ? <h1 className='recent-movies-title'>Most Recent Movies</h1> : <h1 className='recent-movies-title'>Searched Movies</h1>}
 			<Movies movies={searchedMovies.length ? searchedMovies : movies} handleModal={handleModal} />
 			{showModal && <Modal modalSpotlight={modalSpotlight} handleModal={handleModal} />}
 		</main>
