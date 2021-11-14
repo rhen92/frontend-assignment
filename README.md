@@ -19,9 +19,9 @@
 
 ## Assignment
 
-![Home Page](https://giphy.com/gifs/lIuIxRf67csFtLpc3A)
+![Home Page](https://media.giphy.com/media/lIuIxRf67csFtLpc3A/giphy.gif)
 
-![Search Bar](https://giphy.com/gifs/SXWFaK80tD0Dsp58bl)
+![Search Bar](https://media.giphy.com/media/SXWFaK80tD0Dsp58bl/giphy.gif)
 
 I built a movie discovery app in React. This app
 displays movies in a grid and gives the user more information when they click on
